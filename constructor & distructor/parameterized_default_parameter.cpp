@@ -8,13 +8,13 @@ class student
 
 
     public:
-    student(int month);        //declaration of constructor
+    student(int month);   
     void display();
 
 };
 
 
-student::student(int month=1)  //parameterized constructor 
+student::student(int month=1) 
 {
     cout<<"\nenter roll no. of student :";
     cin>>roll_no;
@@ -24,17 +24,14 @@ student::student(int month=1)  //parameterized constructor
     fee=month*n;
 }
 
-void student::display()  // function for display
+void student::display() 
 {
     cout<<"\nname "<<name<<"\nroll no "<<roll_no<<"\n your total fee "<<fee;
 }
 
-int main()    //main function
+int main()  
 {
-    //object declaration 
-    //student s1,s2;        //here the constructor call itself when we create object
 
-    //we create object with parameters
     student s1(4),s2(6);
 
 

@@ -1,46 +1,39 @@
-#include<iostream>
-#include<string.h>
+#include <iostream>
+#include <string.h>
 using namespace std;
 
 class workers
-{   
-    private:
-    int salary,day,oneday_amount;
+{
+private:
+    int salary, day, oneday_amount;
     string name;
 
-    public:
-    workers(int oneday_amount);  //declaration of parameterized constructor
-    void display();               //declaration of function
-
-
+public:
+    workers(int oneday_amount);
+    void display();
 };
 
-workers::workers(int oneday_amount)   //outside defination of constructor
+workers::workers(int oneday_amount)
 {
-    cout<<"\nenter name of workers: ";
-    cin>>name;
-    cout<<"\nenter working days numbers ";
-    cin>>day;
+    cout << "\nenter name of workers: ";
+    cin >> name;
+    cout << "\nenter working days numbers ";
+    cin >> day;
 
-    salary=oneday_amount*day;
-
+    salary = oneday_amount * day;
 }
 
-void workers::display()  //functon for output
+void workers::display()
 {
-    cout<<"\nworker's name: "<<name<<"\nsalary: "<<salary;
+    cout << "\nworker's name: " << name << "\nsalary: " << salary;
 }
 
-
-int main() //main function
-{                             //declaration of object
-    workers w1(700),w2(500);  //constructor called automatic when create object
+int main()
+{
+    workers w1(700);
 
     w1.display();
-    w2.display();
+    cout << "\nSatyam Kumar\nRoll No-1323431\n";
 
     return 0;
-                        
-
 }
-

@@ -1,12 +1,12 @@
-#include <iostream> //library file
+#include <iostream> 
 using namespace std;
 
-class children // class declaration & defination
+class children 
 {
-public:          // access specifier
-    int numbers; // atribute & variable
+public:          
+    int numbers;
 
-    void display() // function decl & definataion
+    void display() 
     {
         cout << "enter the no. of student :";
         cin >> numbers;
@@ -14,7 +14,7 @@ public:          // access specifier
         cout << numbers << endl;
     }
 
-    void display(int n) // here we create again same function so this is called function overload
+    void display(int n) 
     {
         cout << n << endl;
     }
@@ -24,7 +24,8 @@ int main() // main function
 {
     children c;   // object declaration
     c.display();  // calling
-    c.display(8); // calling
+    c.display(1323428); // calling
+    cout<<"\nSatyam Kumar\nRoll No-1323431\n";
 
     return 0;
 }
